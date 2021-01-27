@@ -1,6 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    padding: 15px 0;
+}
+
 .navigation {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .navigation-link {
@@ -30,6 +43,133 @@
     align-items: center;
     cursor: pointer;
 }
-.button-icon {
+
+.button-icon, .button-price {
     margin-right: 10px;
+}
+
+.button-icon:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.slide {
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+.slide-1 {
+    background: #B4D1E0 url("../img/slide-img-1.png") no-repeat top right 40%;
+}
+
+.label {
+    background: #3DC47E;
+    border-radius: 3px;
+    padding: 5px 12px;
+    color: white;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.slide-title {
+    color: #262D33;
+    font-size: 55px;
+    line-height: 70px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.slide-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #4B5157;
+    max-width: 335px;
+    margin-bottom: 40px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.slider-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    min-height: 370px;
+    border-radius: 10px;
+    padding: 60px 46px 80px;
+}
+
+.card-1 {
+    background: #E3E2E3 url("../img/card-image-1.jpg") no-repeat top right;
+    background-size: cover;
+}
+
+.card-2 {
+    background: #000 url("../img/card-image-2.jpg") no-repeat top right;
+    background-size: cover;
+}
+
+.card-3 {
+    padding-top: 35px;
+    background: #CCD5E6 url("../img/card-image-3.png") no-repeat top right 10%;
+    background-size: contain;
+}
+
+.card-4 {
+    padding-top: 35px;
+    padding-left: 25px;
+    background: #FF4F52 url("../img/card-image-4.png") no-repeat top right;
+    background-size: contain;
+}
+
+.card-title {
+    color: #262D33;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Roboto Slab', serif;
+    max-width: 222px;
+    margin: 0;
+}
+
+.card-title.large {
+    max-width: 420px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    max-width: 176px;
+    color: #4B5157;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+.card-text.large {
+    max-width: 320px;
+}
+
+.text-light {
+    color: white;
+}
+
+.card-price {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 900;
 }
